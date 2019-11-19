@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.epmserver.cloudblob",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "microservice",
+    "baseName": "epmcloudblob",
+    "packageName": "com.epmserver.cloudblob",
+    "packageFolder": "com/epmserver/cloudblob",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MjE2YTUzZmY0NjZlYzE2OTI1YzgyZjI0ZThjYWQzNTYyYWJiYzM1MGE3MjJhYWExMTlkYjdmMzEwOTA3MWFmNzI2YTUwYjdlYTU3OGExZDNhZTE4NzgxMjQ1NWZlNDdmMzg2YmUwODY1ZmZmNGI3YjJhNjFjZjY0YTMxZjRlMzU=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "my"
+    ],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

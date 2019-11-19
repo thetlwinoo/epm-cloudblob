@@ -1,0 +1,8 @@
+version: '2'
+services:
+  epmcloudblob-mongodb:
+    image: mongo:4.0.12
+    ports:
+      - '27017:27017'
+    # volumes:
+    #     - ~/volumes/jhipster/epmcloudblob/mongodb/:/data/db/

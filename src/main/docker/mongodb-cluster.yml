@@ -1,0 +1,16 @@
+version: '2'
+services:
+  epmcloudblob-mongodb:
+    image: mongo:4.0.12
+    ports:
+      - '27017:27017'
+    command: mongos --configdb epmcloudblob-mongodb-config
+  epmcloudblob-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  epmcloudblob-mongodb-config:
+    image: mongo:4.0.12
+    container_name: epmcloudblob-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

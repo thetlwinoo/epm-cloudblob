@@ -1,0 +1,28 @@
+entity BlobPhotos{    
+    thumbnailPhotoBlob ImageBlob,    
+    originalPhotoBlob ImageBlob,
+    bannerTallPhotoBlob ImageBlob,
+    bannerWidePhotoBlob ImageBlob,
+    circlePhotoBlob ImageBlob,
+    sharpenedPhotoBlob ImageBlob,
+    squarePhotoBlob ImageBlob,
+    watermarkPhotoBlob ImageBlob,
+    lastEditedBy String,
+    lastEditedWhen Instant        
+}
+
+entity BlobDocument{
+	document Blob, 
+    lastEditedBy String,
+    lastEditedWhen Instant
+}
+
+entity BlobMixedDocument{	
+    document TextBlob,
+    lastEditedBy String,
+    lastEditedWhen Instant
+}
+
+
+dto * with mapstruct
+service all with serviceImpl
